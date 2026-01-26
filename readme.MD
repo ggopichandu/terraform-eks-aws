@@ -26,10 +26,10 @@ Creating above infrastructure involves lot of steps, as maintained sequence we n
 * (Required). ECR. We need to create ECR repo to host the application images.
 * (Optional). CDN is optional. but good to have.
 ### Admin activities
-Bastion
+##### Bastion
 
-SSH to bastion host
-run below command and configure the credentials.
+* SSH to bastion host
+* run below command and configure the credentials.
 aws configure
 get the kubernetes config using below command
 aws eks update-kubeconfig --region us-east-1 --name <YOUR-CLUSTER-NAME>
