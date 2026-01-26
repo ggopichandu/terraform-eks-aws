@@ -2,10 +2,11 @@
   <img src=https://github.com/ggopichandu/terraform-eks-aws/blob/1fe9e5ad08964bb282e72668e91df799eaeffc07/eks-infra.svg
 </div>
 
+
 Creating above infrastructure involves lot of steps, as maintained sequence we need to create
 
-VPC
-All security groups and rules
+* VPC
+* All security groups and rules
 Bastion Host, VPN
 EKS
 RDS
