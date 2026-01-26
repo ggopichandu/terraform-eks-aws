@@ -7,13 +7,14 @@ Creating above infrastructure involves lot of steps, as maintained sequence we n
 
 *VPC
 *All security groups and rules
-Bastion Host, VPN
-EKS
-RDS
-ACM for ingress
-ALB as ingress controller
-ECR repo to host images
-CDN
+*Bastion Host, VPN
+*EKS
+*RDS
+*ACM for ingress
+*ALB as ingress controller
+*ECR repo to host images
+*CDN
+
 **Sequence**
 (Required). create VPC first
 (Required). create SG after VPC
