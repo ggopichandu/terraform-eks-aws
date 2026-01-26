@@ -17,11 +17,16 @@ data "aws_ami" "ami_info" {
   
     filter {
         name = "root-device-type"
-        values = ["EBS"]
+        values = ["ebs"]
     }
 
     filter {
         name = "virtualization-type"
         values = ["hvm"]
+    }
+
+    filter {
+        name = "architecture"
+        values = ["x86_64"]
     }
 }
