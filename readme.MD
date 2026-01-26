@@ -79,9 +79,15 @@ eksctl create iamserviceaccount \
 --override-existing-serviceaccounts \
 --approve
 ```
-Add the EKS chart repo to Helm
+* Add the EKS chart repo to Helm
+```
 helm repo add eks https://aws.github.io/eks-charts
-Helm install command for clusters with IRSA:
+```
+* Helm install command for clusters with IRSA:
+```
 helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n kube-system --set clusterName=<cluster-name> --set serviceAccount.create=false --set serviceAccount.name=aws-load-balancer-controller
-check aws-load-balancer-controller is running in kube-system namespace.
+```
+* check aws-load-balancer-controller is running in kube-system namespace.
+```
 kubectl get pods -n kube-system
+```
