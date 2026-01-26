@@ -15,7 +15,7 @@ Creating above infrastructure involves lot of steps, as maintained sequence we n
 * ECR repo to host images
 * CDN
 
-***Sequence***
+## Sequence
 * (Required). create VPC first
 * (Required). create SG after VPC
 * (Required). create bastion host. It is used to connect RDS and EKS cluster.
