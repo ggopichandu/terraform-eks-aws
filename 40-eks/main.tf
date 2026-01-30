@@ -26,7 +26,7 @@ module "eks" {
   node_security_group_id     = local.node_sg_id
 
   # the user which you used to create cluster will get admin access
-  enable_cluster_creator_admin_permissions = false
+  enable_cluster_creator_admin_permissions = true
 
   cluster_addons = {
     coredns                = {}
