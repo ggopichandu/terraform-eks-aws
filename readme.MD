@@ -25,9 +25,9 @@ Creating above infrastructure involves lot of steps, as maintained sequence we n
 * (Required). ingress ALB is required to expose our applications to outside world.
 * (Required). ECR. We need to create ECR repo to host the application images.
 * (Optional). CDN is optional. but good to have.
-## Admin activities
-### Bastion
 
+### Admin activities
+**Bastion**
 * SSH to bastion host
 * run below command and configure the credentials.
 ```
@@ -41,7 +41,11 @@ aws eks update-kubeconfig --region us-east-1 --name <YOUR-CLUSTER-NAME>
 ```
 kubectl get nodes
 ```
-### RDS:
+* Create expense namespace
+```
+kubectl create namespace expense
+```
+**RDS**:
 
 * Connect to RDS using bastion host.
 ```
@@ -52,7 +56,7 @@ mysql -h <DB-R53-ADRESS> -u root -pExpenseApp1
 - Table
 - User
 - flush privileges
-### Ingress Controller
+**Ingress Controller**
 
 Ref: https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.8/
 
