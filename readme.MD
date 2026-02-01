@@ -27,7 +27,7 @@ Creating above infrastructure involves lot of steps, as maintained sequence we n
 * (Optional). CDN is optional. but good to have.
 
 ### Admin activities
-**Bastion**
+**Bastion**:
 * SSH to bastion host
 * run below command and configure the credentials.
 ```
@@ -57,7 +57,7 @@ mysql -h <DB-R53-ADRESS> -u root -pExpenseApp1
 - User
 - flush privileges
 
-**Ingress Controller**
+**Ingress Controller**:
 
 Ref: https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.8/
 
