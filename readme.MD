@@ -56,6 +56,7 @@ mysql -h <DB-R53-ADRESS> -u root -pExpenseApp1
 - Table
 - User
 - flush privileges
+
 **Ingress Controller**
 
 Ref: https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.8/
